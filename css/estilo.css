@@ -1,0 +1,54 @@
+body{
+    background-color:turquoise;
+}
+
+#login_colapse, #registro_colapse {
+    top: 5rem;
+    bottom: 1rem;
+    right: 1rem;
+    border: solid;
+    border-radius: 1rem;
+}
+/*  
+    css para la barra nav principal y el offcanvas con el formulario de login
+*/
+#barra_principal{
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.imagenes{
+    margin: 0.5rem;
+}
+
+/* 
+    fijo el tamaño del scroll
+*/
+.scrollspy-example {
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+#scroll_texto{
+    /*max-width: 20rem;
+    border: solid; */
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgba(127, 255, 212, 0.4);
+}
+  
+/* 
+    tamaño maximo para imagenes
+*/
+.img-max {
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+.map{
+    max-width: 20rem;
+    max-height: 20rem;
+}
+  
+
+  
