@@ -1,6 +1,15 @@
+
 body{
-    background-color:turquoise;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+} 
+
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
 }
+  
 
 #login_colapse, #registro_colapse {
     top: 5rem;
@@ -16,33 +25,94 @@ body{
     border-radius: 1rem;
     margin: 1rem;
 }
-
-.imagenes{
-    margin: 0.5rem;
-}
-
-/* 
-    fijo el tamaño del scroll
+/*
+    Altura minima etc
 */
-.scrollspy-example {
-    max-height: 20rem;
-    overflow-y: auto;
+
+.altura{
+    min-height: 35rem;
 }
 
-#scroll_texto{
-    /*max-width: 20rem;
-    border: solid; */
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: rgba(127, 255, 212, 0.4);
+.altura2{
+    background-size: 100%;
+    min-height: 40rem;
+}
+
+.altura3{
+    background-size: 100%;
+}
+
+.altura-total {
+    height: 100vh;
+}
+
+/*
+    Para el texto en los p del main
+*/
+
+.blanco{
+    color: white;
+    width: 40rem;
+    padding: 0.5rem;
+}
+
+.fijar_texto{
+    width: 30rem;
+}
+
+.fondo_verde{
+    color: rgb(76, 139, 93);
+    background-color: rgb(29, 5, 5);
+    opacity: 95%;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
   
+p{
+    text-align: justify;
+    max-width: 100%;
+}
+
+.bordes{
+    border: inset;
+}
+
+.quitarAzul{
+    text-decoration: none;
+    color:white;
+}
+
+
+.quitarAzul:hover{
+    transition: 0.8s;
+     color: bisque;
+}
+
+.margin{
+    margin-top: 3rem;
+}
+
+
+
+  
 /* 
-    tamaño maximo para imagenes
+    tamaño maximo para imagenes y para el mapa de google
 */
 .img-max {
     max-width: 20rem;
     max-height: 20rem;
+}
+
+.imagenes{
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .map{
