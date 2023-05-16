@@ -1,0 +1,138 @@
+
+body{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+} 
+
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+}
+  
+
+#login_colapse, #registro_colapse {
+    top: 5rem;
+    bottom: 1rem;
+    right: 1rem;
+    border: solid;
+    border-radius: 1rem;
+}
+/*  
+    css para la barra nav principal y el offcanvas con el formulario de login
+*/
+#barra_principal{
+    border-radius: 1rem;
+    margin: 1rem;
+}
+/*
+    Altura minima etc
+*/
+
+.altura{
+    min-height: 35rem;
+}
+
+.altura2{
+    background-size: 100%;
+    min-height: 40rem;
+}
+
+.altura3{
+    background-size: 100%;
+}
+
+.altura-total {
+    height: 100vh;
+}
+
+/*
+    Para el texto en los p del main
+*/
+
+.blanco{
+    color: white;
+    width: 40rem;
+    padding: 0.5rem;
+}
+
+.fijar_texto{
+    width: 30rem;
+}
+
+.fondo_verde{
+    color: rgb(76, 139, 93);
+    background-color: rgb(29, 5, 5);
+    opacity: 95%;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+p{
+    text-align: justify;
+    max-width: 100%;
+}
+
+.bordes{
+    border: inset;
+}
+
+.quitarAzul{
+    text-decoration: none;
+    color:white;
+}
+
+
+.quitarAzul:hover{
+    transition: 0.8s;
+     color: bisque;
+}
+
+.margin{
+    margin-top: 3rem;
+}
+
+
+
+  
+/* 
+    tamaño maximo para imagenes y para el mapa de google
+*/
+.img-max {
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+.imagenes{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.map{
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+/*redes sociales*/
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.social-icons li {
+    margin: 0 10px;
+}
+  
+
+  
