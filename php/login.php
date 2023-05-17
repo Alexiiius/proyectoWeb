@@ -1,6 +1,8 @@
 <?php
 session_start();
 require_once ("conexion.php");
+require_once ("mostrar_errores.php");
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 

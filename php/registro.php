@@ -1,7 +1,10 @@
 <?php
 
 session_start();
-require_once ("../php/conexion.php");
+require_once ("conexion.php");
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -102,7 +105,8 @@ if ($stmt->rowCount() > 0) {
 }
 
 //hasheo la contraseña
-$hash = password_hash($contraseña, PASSWORD_DEFAULT);
+$hash = password_hash($contraseña, PASSWORD_ARGON2ID);
+
 //preparo consulta
 $stmt = $pdo->prepare("INSERT INTO usuarios (Email, Contraseña, DNI, Nombre, Apellido, Telefono, FechaNacimiento, Pais, Ciudad) VALUES (?, ?, ?, ?, ?, ? , ?, ?, ?)");
 //preparo las variables
@@ -122,6 +126,7 @@ $stmt->execute();
 if($stmt && $validacion){
     $_SESSION['correo'] = $correo;
     $_SESSION['contraseña'] = $contraseña;
+    $_SESSION['nombre'] = $nombre;
     $errorMensaje = "Se ha compelta el registro.";
     $_SESSION['errorMensaje'] = $errorMensaje;
     unset($pdo);

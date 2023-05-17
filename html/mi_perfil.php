@@ -1,6 +1,7 @@
 <?php
   session_start();
   require_once ("../php/conexion.php");
+  require_once ("../php/mostrar_errores.php");
 
   if (!isset($_SESSION['correo'])) {
     $errorMensaje = "Debes iniciar sesion para acceder al club.";

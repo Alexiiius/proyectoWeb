@@ -12,26 +12,26 @@ try {
 
     $query = "CREATE TABLE IF NOT EXISTS usuarios (
         id INT(11) AUTO_INCREMENT PRIMARY KEY,
-        Email VARCHAR(255) UNIQUE not null,
-        Contraseña VARCHAR(255) not null,
+        Email VARCHAR(30) UNIQUE not null,
+        Contraseña VARCHAR(100) not null,
         DNI CHAR(9)  not null
             CHECK (DNI REGEXP '^[0-9]{8}[A-Za-z]$'),
-        Nombre VARCHAR(255) not null
+        Nombre VARCHAR(30) not null
             CHECK (Nombre REGEXP '^[A-Za-z]+$'),
-        Apellido VARCHAR(255) not null
+        Apellido VARCHAR(30) not null
                 CHECK (Apellido REGEXP '^[A-Za-z]+$'),
         Telefono CHAR(9) not null
                 CHECK (Telefono REGEXP '^[0-9]{9}$'),
         FechaNacimiento varchar(20) not null, 
-        Pais VARCHAR(255) not null,
-        Ciudad VARCHAR(255) not null
+        Pais VARCHAR(30) not null,
+        Ciudad VARCHAR(30) not null
                 CHECK (Ciudad REGEXP '^[A-Za-z]+$')
         )";
     $pdo->exec($query);
 
     $query = "CREATE TABLE IF NOT EXISTS articulos (
                 id INT(11) AUTO_INCREMENT PRIMARY KEY,
-                titulo VARCHAR(255) NOT NULL,
+                titulo VARCHAR(30) NOT NULL,
                 contenido TEXT NOT NULL,
                 id_autor INT(11) NOT NULL,
                 FOREIGN KEY (id_autor) REFERENCES usuarios(id)
