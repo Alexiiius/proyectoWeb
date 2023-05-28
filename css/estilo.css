@@ -198,3 +198,8 @@ p{
 .articulo-borde{
     border-radius: 5%;
 }
+
+.card-text{
+    min-height: 25vh;
+    padding-bottom: 10vh;
+}
