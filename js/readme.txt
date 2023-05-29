@@ -1,2 +1,0 @@
-Estuve trasteando con js pero aun no me llevo muy bien con el y deje a medias varias cosas abiertas.
-Dejare los archivos aqui para revisarlos mas a futuro si le vuelvo a meter mano al tema pero no estan siendo implementados en el proyecto a excepcion del offcanvas.js
